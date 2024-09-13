@@ -1,0 +1,64 @@
+.container {
+    /* The image used */
+    background-image: url("/assets/images/homeImage.jpg");
+  
+    /* Set a specific height */
+    min-height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title{
+    margin:0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color:white;
+    border: 5px solid black;
+    text-align: center;
+    border-radius:25px;
+    padding:10px;
+  }
+
+  img{
+    height:auto;
+    width: 75%;
+}
+
+a{
+    position:relative;
+    text-decoration: none;
+    font-size: 32px;
+    color: black;
+    font-weight: 600;
+}
+
+a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: .3s;
+}
+a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+}
+
+a:hover::before{
+    width: 100%;
+}
