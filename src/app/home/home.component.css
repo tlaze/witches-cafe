@@ -3,7 +3,7 @@
     background-image: url("/assets/images/homeImage.jpg");
   
     /* Set a specific height */
-    min-height: 100vh;
+    min-height: 90vh;
   
     /* Create the parallax scrolling effect */
     background-attachment: absolute;
