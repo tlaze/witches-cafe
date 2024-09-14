@@ -40,4 +40,5 @@ a:hover::before{
 }
 iframe{
     margin:5px;
+    border-radius: 25px;
 }
