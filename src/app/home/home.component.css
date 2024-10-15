@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 .title-container {
@@ -9,14 +10,14 @@
     background-image: url("/assets/images/homeImage.jpg");
   
     /* Set a specific height */
-    min-height: 90vh;
+    min-height: 100vh;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 5px solid black;
+    
   }
 
   .title{
@@ -27,10 +28,10 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color:white;
-    border: 5px solid black;
+    border: 5px solid #1E3B1D;
     text-align: center;
     border-radius:25px;
-    padding:10px;
+    padding:25px;
   }
 
   img{
@@ -38,81 +39,43 @@
     width: 75%;
 }
 
-.title-container a{
+#menu-button{
     position:relative;
     text-decoration: none;
-    font-size: 32px;
-    color: red;
+    font-size: 28px;
+    color: #721E07;
     font-weight: 600;
 }
 
-.title-container a::before{
+#menu-button::before{
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: #721E07;
     transition: .3s;
 }
-.title-container a::before{
+#menu-button::before{
     content: '';
     position: absolute;
     top: 100%;
     left: 0;
     width: 0;
     height: 2px;
-    background: black;
+    background: #721E07;
 }
 
-.title-container a:hover::before{
+#menu-button:hover::before{
     width: 100%;
 }
 
-
-.social-container{
-    text-align: center;
-    padding:20px;
-}
-.social-container a{
-    position:relative;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 32px;
+#facebook-button{
+    color:#1E3B1D;
+    text-decoration:none;
 }
 
-.social-container a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    transition: .3s;
-}
-.social-container a::before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: black;
-}
 
-.social-container a:hover::before{
-    width: 100%;
-}
-.fb-photos{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-iframe{
-    margin:5px;
-    border-radius: 25px;
-}
+
 
